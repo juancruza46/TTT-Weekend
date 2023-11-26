@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color : violet;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 5vmin;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 20vmin);
+    grid-template-rows: repeat(3, 20vmin);
+    
+    background: conic-gradient(
+      orchid, 
+      violet,
+      purple,  
+      magenta
+     
+    );
+    border-radius: 5vmin;
+    
+  }
+  
+  
+  #board > div {
+    margin: 3vmin;
+    background-color: white;
+    border: 1vmin solid white;
+    border-radius: 50%;
+  }
+  
+  #board > div.avail {
+    cursor: pointer;
+  }
+  
+  #board > div.avail:hover {
+    border-color: pink;
+  }
+  
+  button {
+    margin-top: 5vmin;
+    padding: 1.5vmin;
+    background-color: violet;
+    color: white;
+    border-radius: 2vmin;
+    font-size: 4vmin;
+  }
+  
+  button:disabled {
+    background-color: purple;
+    color: violet;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: purple;
+    color: violet;
+  }
+  

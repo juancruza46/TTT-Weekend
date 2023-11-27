@@ -70,3 +70,6 @@
     color: violet;
   }
   
+  p { 
+    margin-bottom: -10px; 
+} 
